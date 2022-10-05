@@ -14,7 +14,7 @@ class ObservationList(APIView):
     ]
 
     def get(self, request):
-        observations = Observation.objects.all()
+        observation = Observation.objects.all()
         serializer = ObservationSerializer(
             observation, many=True, context={'request': request}
         )
