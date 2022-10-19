@@ -49,12 +49,14 @@ class ObservationDetailViewTests(APITestCase):
 
     def test_user_can_update_own_observation(self):
         self.client.login(username='alice', password='pass')
-        response = self.client.put('/observations/1/', {'title': 'a new title'})
+        response = self.client.put('/observations/1/',
+                                   {'title': 'a new title'})
         observation = Observation.objects.filter(pk=1).first()
         self.assertEqual(observation.title, 'a new title')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
     def test_user_cant_update_another_users_observation(self):
         self.client.login(username='alice', password='pass')
-        response = self.client.put('/observations/2/', {'title': 'a new title'})
+        response = self.client.put(
+            '/observations/2/', {'title': 'a new title'})
         self.assertEqual(response.status_code, status.HTTP_403_FORBIDDEN)
