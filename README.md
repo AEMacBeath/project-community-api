@@ -1,7 +1,7 @@
 # Project Community - API
 
 ## Project Description
-Project Community is a social media platform designed for users to share safety observation reports. The applications is made up of a Django API ([project-community-api](https://project-community-api.herokuapp.com/)) and a React app ([project-community-api](https://project-community-ci.herokuapp.com)).
+Project Community is a social media platform designed for users to share safety observation reports. The application is made up of a Django API ([project-community-api](https://project-community-api.herokuapp.com/)) and a React app ([project-community-ci](https://project-community-ci.herokuapp.com)).
 
 ## Development
 This API was developed as a series of small tasks recorded as [GitHub Issues](https://github.com/AEMacBeath/project-community-api/issues?q=is%3Aissue+is%3Aclosed+sort%3Acreated-asc).
