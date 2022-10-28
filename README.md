@@ -52,10 +52,10 @@ The GitHub project is grouped by Milestones broken down into User Stories and Ta
 | Likes          | View liked observations - As a user I can easily locate observations I have liked so that I can stay up to date with comments / updates.   | Create LikeDetail View                  |
 
 ## Models and CRUD breakdown
-![model-crud](/documentation/screenshots/model-crud.png)
+![model-crud](/docs/screenshots/model-crud.png)
 
 ## Entity Relationship Diagram
-![relationship-diagram](/documentation/screenshots/relationship-diagram.png)
+![relationship-diagram](/docs/screenshots/relationship-diagram.png)
 
 ## Testing
 - Posts app:
