@@ -20,7 +20,7 @@ The user stories for this API where written in conjuncion with the React applica
 
 The GitHub project is grouped by Milestones broken down into User Stories and Tasks. 
 
-### API Specific User Stories
+### API User Stories
 | Milestone      | User Story                                                                                                                                 | Task                                    |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|
 | Authentication | Sign up - As a user I can create an account so that I can access all the features.                                                         | Install dj-rest-auth                    |
@@ -58,14 +58,30 @@ The GitHub project is grouped by Milestones broken down into User Stories and Ta
 ![relationship-diagram](/docs/screenshots/relationship-diagram.png)
 
 ## Testing
-- Posts app:
-    - logged out users can list posts
-    - logged in users can create a post
-    - logged out users can't create a post
-    - logged out users can retrieve a post with a valid id
-    - logged out users can't retrieve a post with an invalid id
-    - logged in users can update a post they own
-    - logged in users can't update a post they don't own
+### Validator
+All errors in GitHub Problems resolved excluding the below exceptions.
+
+#### *settings.py AUTH_PASSWORD_VALIDATORS*<br>
+![settings-problems](/docs/screenshots/settings-problems.png)
+
+#### *env.py DATABASE_URL*<br>
+![env-problems](/docs/screenshots/env-problems.png)
+
+### Automated
+-   [Observations](/observations/tests.py)
+    -   test_can_list_observations
+    -   test_logged_in_user_can_create_observation
+    -   test_user_not_logged_in_cant_create_observation
+    -   test_can_retrieve_observation_using_valid_id
+    -   test_cant_retrieve_observation_using_invalid_id
+    -   test_user_can_update_own_observation
+    -   test_user_cant_update_another_users_observation
+-   [Comments](/comments/tests.py)
+    -   tba
+-   [Likes](/likes/tests.py)
+    -   tba
+-   [Profiles](/profiles/tests.py)
+    -   tba
 
 ## Deployment
 - set the following environment variables:
