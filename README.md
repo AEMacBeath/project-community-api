@@ -16,7 +16,7 @@ Heroku App - [project-community-ci](https://project-community-ci.herokuapp.com)
 This API was developed as a series of small tasks recorded as [GitHub Issues](https://github.com/AEMacBeath/project-community-api/issues?q=is%3Aissue+is%3Aclosed+sort%3Acreated-asc).
 
 ## User Stories
-The user stories for this API where written in conjuncion with the React application using [@AEMacBeath's Project Community](https://github.com/users/AEMacBeath/projects/11/views/1) GitHub Project.
+The user stories for this API were written in conjunction with the React application using [@AEMacBeath's Project Community](https://github.com/users/AEMacBeath/projects/11/views/1) GitHub Project.
 
 The GitHub project is grouped by Milestones broken down into User Stories and Tasks. 
 
@@ -76,12 +76,6 @@ All errors in GitHub Problems resolved excluding the below exceptions.
     -   test_cant_retrieve_observation_using_invalid_id
     -   test_user_can_update_own_observation
     -   test_user_cant_update_another_users_observation
--   [Comments](/comments/tests.py)
-    -   tba
--   [Likes](/likes/tests.py)
-    -   tba
--   [Profiles](/profiles/tests.py)
-    -   tba
 
 ## Deployment
 - set the following environment variables:
